@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ecedonmez.github.io/sitemap.xml
