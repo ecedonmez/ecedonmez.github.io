@@ -11,7 +11,9 @@ nav_order: 2
     color: #4c5866 !important;
   }
   html:not([data-theme="dark"]) .navbar-brand,
-  html:not([data-theme="dark"]) .navbar-brand span {
+  html:not([data-theme="dark"]) .navbar-brand *,
+  html:not([data-theme="dark"]) .post-title *,
+  html:not([data-theme="dark"]) .font-weight-bold {
     color: #4c5866 !important;
   }
   .navbar-brand {
