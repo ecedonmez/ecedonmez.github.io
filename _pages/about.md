@@ -55,3 +55,5 @@ latest_posts:
 </script>
 
 I am Ece Dönmez, a chemist from Istanbul, Türkiye. I received my B.Sc. in Chemistry from Istanbul University-Cerrahpaşa (2021–2026) and I am currently pursuing an M.Sc. in Polymer Science and Technology at Istanbul Technical University (2026–2028).
+
+My research experience spans electrochemical sensors, nanoparticle synthesis, microfluidics, photopolymerization, and the synthesis of thiocarbohydrazone ligands and their metal complexes. I have completed research internships in Poland, Slovakia and Türkiye.
