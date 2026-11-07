@@ -39,4 +39,18 @@ latest_posts:
   }
 </style>
 
+<script>
+  // The theme hides the navbar name on the home page; show it here too so every page looks the same.
+  document.addEventListener("DOMContentLoaded", function () {
+    var container = document.querySelector("#navbar .container");
+    if (container && !container.querySelector(".navbar-brand")) {
+      var a = document.createElement("a");
+      a.className = "navbar-brand title font-weight-lighter";
+      a.href = "/";
+      a.innerHTML = '<span class="font-weight-bold">Ece</span> Dönmez';
+      container.insertBefore(a, container.firstChild);
+    }
+  });
+</script>
+
 I am Ece Dönmez, a chemist from Istanbul, Türkiye. I received my B.Sc. in Chemistry from Istanbul University-Cerrahpaşa (2021–2026) and I am currently pursuing an M.Sc. in Polymer Science and Technology at Istanbul Technical University (2026–2028).
