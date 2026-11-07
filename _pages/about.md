@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About Me
 permalink: /
 subtitle: Chemist · M.Sc. Student in Polymer Science and Technology
 
