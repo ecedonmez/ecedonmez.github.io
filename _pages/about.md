@@ -6,6 +6,7 @@ subtitle: Chemist · M.Sc. Student in Polymer Science and Technology
 
 profile:
   align: right
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Istanbul Technical University</p>
