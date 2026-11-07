@@ -16,6 +16,12 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
+<style>
+  html:not([data-theme="dark"]) :is(h1, h2, h3, h4, h5, h6, .post-title, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a) {
+    color: #4c5866 !important;
+  }
+</style>
+
 <div class="post">
 
 {% assign blog_name_size = site.blog_name | size %}

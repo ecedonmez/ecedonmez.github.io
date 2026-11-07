@@ -6,6 +6,12 @@ nav: false
 description: featured and bundled plugin ecosystem catalog for al-folio v1.x
 ---
 
+<style>
+  html:not([data-theme="dark"]) :is(h1, h2, h3, h4, h5, h6, .post-title, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a) {
+    color: #4c5866 !important;
+  }
+</style>
+
 `al-folio` `v1.x` is a starter with plugin-owned runtime features.
 This page lists plugins recognized in the ecosystem catalog (`_data/featured_plugins.yml`).
 
