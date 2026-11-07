@@ -25,6 +25,16 @@ latest_posts:
   html:not([data-theme="dark"]) :is(h1, h2, h3, h4, h5, h6, .post-title, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a) {
     color: #4c5866 !important;
   }
+  html:not([data-theme="dark"]) .navbar-brand,
+  html:not([data-theme="dark"]) .navbar-brand span {
+    color: #4c5866 !important;
+  }
+  .navbar-brand {
+    font-weight: 700 !important;
+  }
+  .post-title {
+    font-weight: 700 !important;
+  }
 </style>
 
 I am Ece Dönmez, a chemist from Istanbul, Türkiye. I received my B.Sc. in Chemistry from Istanbul University-Cerrahpaşa (2021–2026) and I am currently pursuing an M.Sc. in Polymer Science and Technology at Istanbul Technical University (2026–2028).
