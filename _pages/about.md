@@ -9,11 +9,16 @@ profile:
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Istanbul Technical University</p>
-    <p>Istanbul, Türkiye</p>
+    <p class="sp-name">Ece Dönmez</p>
+    <p class="sp-tag">Chemist<br>M.Sc. Student in Polymer Science and Technology</p>
+    <p><i class="fa-solid fa-location-dot"></i>Istanbul, Türkiye</p>
+    <p><i class="fa-solid fa-building-columns"></i>Istanbul Technical University</p>
+    <p><i class="fa-solid fa-envelope"></i><a id="about-email" href="#">Email</a></p>
+    <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/ecedonmez/" target="_blank" rel="noopener">LinkedIn</a></p>
+    <p><i class="fa-brands fa-github"></i><a href="https://github.com/ecedonmez" target="_blank" rel="noopener">GitHub</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -38,6 +43,12 @@ latest_posts:
   .post-title {
     font-weight: 700 !important;
   }
+  .profile .more-info p { margin: 0.3rem 0; }
+  .profile .more-info i { width: 1.5rem; text-align: center; margin-right: 0.4rem; }
+  .profile .more-info .sp-name { font-size: 1.25rem; font-weight: 700; margin-top: 1rem; }
+  html:not([data-theme="dark"]) .profile .more-info .sp-name { color: #4c5866; }
+  .profile .more-info .sp-tag { margin-bottom: 1rem; }
+  .profile .more-info a { color: inherit; }
 </style>
 
 <script>
@@ -51,6 +62,11 @@ latest_posts:
       a.innerHTML = '<span class="font-weight-bold">Ece</span> Dönmez';
       container.insertBefore(a, container.firstChild);
     }
+  });
+  // Build the e-mail link at runtime so the address is not in the page source (spam protection).
+  document.addEventListener("DOMContentLoaded", function () {
+    var a = document.getElementById("about-email");
+    if (a) a.href = "mailto:" + ["ecedonmez2003", "gmail.com"].join("@");
   });
 </script>
 
