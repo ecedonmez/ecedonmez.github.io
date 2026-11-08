@@ -17,7 +17,25 @@
   .navbar-brand {
     font-weight: 700 !important;
   }
-</style> <p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="https://ecedonmez.github.io">home page</a>.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ece Dönmez. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+</style> <script>
+  // Show "Search" instead of the "ctrl k" hint in the navbar.
+  (function () {
+    function fix() {
+      var el = document.querySelector("#search-toggle .nav-link");
+      if (!el) return;
+      for (var i = 0; i < el.childNodes.length; i++) {
+        var n = el.childNodes[i];
+        if (n.nodeType === 3 && n.nodeValue.trim() !== "" && n.nodeValue.trim() !== "Search") n.nodeValue = "Search ";
+      }
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      fix();
+      var el = document.querySelector("#search-toggle .nav-link");
+      if (el) new MutationObserver(fix).observe(el, { childList: true, characterData: true, subtree: true });
+    });
+    window.addEventListener("load", fix);
+  })();
+</script> <p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="https://ecedonmez.github.io">home page</a>.</p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ece Dönmez. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
