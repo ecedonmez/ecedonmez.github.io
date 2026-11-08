@@ -25,26 +25,6 @@ nav_order: 2
   }
 </style>
 
-<script>
-  // Show "Search" instead of the "ctrl k" hint in the navbar.
-  (function () {
-    function fix() {
-      var el = document.querySelector("#search-toggle .nav-link");
-      if (!el) return;
-      for (var i = 0; i < el.childNodes.length; i++) {
-        var n = el.childNodes[i];
-        if (n.nodeType === 3 && n.nodeValue.trim() !== "" && n.nodeValue.trim() !== "Search") n.nodeValue = "Search ";
-      }
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-      fix();
-      var el = document.querySelector("#search-toggle .nav-link");
-      if (el) new MutationObserver(fix).observe(el, { childList: true, characterData: true, subtree: true });
-    });
-    window.addEventListener("load", fix);
-  })();
-</script>
-
 ## Conference Proceedings
 
 - **Dönmez E.**, Erçağ A., Kaya Y. (2026). A Novel ONS-Donor Thiocarbohydrazone Ligand and Its Dioxomolybdenum(VI) Complex. _37th National Chemistry Congress_, PS-030, p. 256. <a href="https://drive.google.com/file/d/1jVfQS6Jmze9qytaLYnBBp4oG0RffHiK9/view" target="_blank" rel="noopener">Book of Abstracts</a>.
