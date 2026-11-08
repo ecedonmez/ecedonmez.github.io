@@ -21,25 +21,7 @@
   h2 {
     font-weight: 700;
   }
-</style> <script>
-  // Show "Search" instead of the "ctrl k" hint in the navbar.
-  (function () {
-    function fix() {
-      var el = document.querySelector("#search-toggle .nav-link");
-      if (!el) return;
-      for (var i = 0; i < el.childNodes.length; i++) {
-        var n = el.childNodes[i];
-        if (n.nodeType === 3 && n.nodeValue.trim() !== "" && n.nodeValue.trim() !== "Search") n.nodeValue = "Search ";
-      }
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-      fix();
-      var el = document.querySelector("#search-toggle .nav-link");
-      if (el) new MutationObserver(fix).observe(el, { childList: true, characterData: true, subtree: true });
-    });
-    window.addEventListener("load", fix);
-  })();
-</script> <h2 id="conference-proceedings">Conference Proceedings</h2> <ul> <li> <strong>Dönmez E.</strong>, Erçağ A., Kaya Y. (2026). A Novel ONS-Donor Thiocarbohydrazone Ligand and Its Dioxomolybdenum(VI) Complex. <em>37th National Chemistry Congress</em>, PS-030, p. 256. <a href="https://drive.google.com/file/d/1jVfQS6Jmze9qytaLYnBBp4oG0RffHiK9/view" target="_blank" rel="noopener">Book of Abstracts</a>.</li> </ul> <h2 id="select-publications">Select Publications</h2> <ul> <li>Coming soon! I am but a humble grad :)</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ece Dönmez. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+</style> <h2 id="conference-proceedings">Conference Proceedings</h2> <ul> <li> <strong>Dönmez E.</strong>, Erçağ A., Kaya Y. (2026). A Novel ONS-Donor Thiocarbohydrazone Ligand and Its Dioxomolybdenum(VI) Complex. <em>37th National Chemistry Congress</em>, PS-030, p. 256. <a href="https://drive.google.com/file/d/1jVfQS6Jmze9qytaLYnBBp4oG0RffHiK9/view" target="_blank" rel="noopener">Book of Abstracts</a>.</li> </ul> <h2 id="select-publications">Select Publications</h2> <ul> <li>Coming soon! I am but a humble grad :)</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Ece Dönmez. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
