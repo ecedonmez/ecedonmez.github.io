@@ -1,4 +1,4 @@
-// Local override of the theme's shortcut-key.js (loaded on every page).
+// Site tweaks, appended to the theme's shortcut-key.js (loaded on every page) during the deploy build.
 // 1) Shows "Search" instead of the "ctrl k" / "⌘ k" hint in the navbar.
 // 2) Applies the site-wide heading/name color (#4C5866) in light mode.
 (function () {

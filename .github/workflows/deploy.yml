@@ -97,6 +97,10 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+      - name: Apply site tweaks 🎨
+        run: |
+          test -f _site/assets/al_search/js/shortcut-key.js
+          cat assets/js/site-tweaks.js >> _site/assets/al_search/js/shortcut-key.js
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
