@@ -21,4 +21,4 @@ nav_order: 5
   }
 </style>
 
-{% include news.liquid %}
+For regular news updates, follow me on [LinkedIn](https://www.linkedin.com/in/ecedonmez/).
