@@ -6,7 +6,7 @@ subtitle: Chemist · M.Sc. Student in Polymer Science and Technology
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p class="sp-name">Ece Dönmez</p>
